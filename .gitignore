@@ -1,0 +1,17 @@
+__pycache__/
+outputs/
+artifacts/
+.pytest_cache/
+data*/
+data.zip
+checkpoints/
+.vscode/
+plots/
+wandb/
+shim/
+*.npy
+figures/
+.venv/
+build/
+dist/
+*.egg-info/

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "universal-amore"
+version = "0.1.0"
+description = "Universal and slice-tailored AMORE RF shimming from channelwise B1 maps"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.23",
+    "torch>=1.13",
+    "h5py>=3.6",
+    "matplotlib>=3.6",
+    "seaborn>=0.12",
+    "einops>=0.6",
+]
+
+[tool.setuptools]
+py-modules = ["shimming", "dataloader", "anonymize_data", "calc_shim"]
